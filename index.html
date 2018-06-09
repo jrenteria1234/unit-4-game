@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <title>Element Collector</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
+
 <body>
+    <h1> Element Collector </h1>
     
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">How to Play!</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p> You will be given a random number at the start of the game </p>
+                        <p> There are four elements below. By clicking each elements you will add a specific amount of points to your total score.</p>
+                        <p> You defeat the enchantress by matching your total score to the random number. You lose if you go over.</p>
+                        <p> The value of each element is hidden from you until you click it.</p>
+                        <p> The enchantress will reset the number after every battle!</p> </div>
+                </div>
+    
+            </div>
+            <div class="col-md-6">
+                <div class="col-md-12 numberToWin"> </div>
+                <div class="col-md-12 elementImages"></div>
+                <div class="col-md-6 win-lose-counter"> </div>
+                <div class="col-md-6 score-number"></div>
+                <div class="col-md-6 total-score">
+                    <p>Your total score is:</p>
+    
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>
